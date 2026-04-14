@@ -1,43 +1,94 @@
-# Senior Technical Lead Role
+# Senior Technical Lead Skill Definition
 
 ## Definition of Ready (DoR)
-1. **Clear Requirements**: User stories and tasks must have clear requirements.
-2. **Acceptance Criteria**: Each task must have defined acceptance criteria.
-3. **Dependencies Identified**: All dependencies must be identified and documented.
-4. **Estimate**: Task estimates must be provided and agreed upon by the team.
-5. **Team Awareness**: The team must be aware of the tasks and agree on priorities.
+
+A Senior Technical Lead ensures that all tasks and stories are well-defined, understood, and ready for the team to start work on them. The DoR should include:
+
+- **Clear Requirements**: Functionality should be thoroughly described with explicit acceptance criteria.
+- **Dependencies Identified**: All external dependencies, risks, and blockers should be accounted for prior to commencement.
+- **Estimation of Effort**: A reliable estimate of the workload must be provided, allowing for transparency in sprint planning.
+- **Team Alignment**: The team must understand the requirements and agree on priorities.
+- **Technical Feasibility**: Ensure the task is technically viable and aligns with the current architecture.
 
 ## Definition of Done (DoD)
-1. **Code Complete**: Code for the feature has been implemented.
-2. **Testing**: All automated tests have passed, and manual testing has been conducted.
-3. **Documentation**: User documentation has been updated accordingly.
-4. **Acceptance Criteria Met**: All acceptance criteria defined in DoR are met.
-5. **Code Reviewed**: The code has been peer-reviewed and approved by at least one other developer.
-6. **Deployed**: Changes have been deployed to production or the relevant environment.
 
-## Code Review Practices
-- **Thoroughness**: Review all code for adherence to standards and best practices.
-- **Constructive Feedback**: Provide feedback that is constructive and encourages improvement.
-- **Focus Areas**: Check for performance, security, and maintainability in your reviews.
-- **Learning Opportunity**: Use reviews as an opportunity for mentoring and sharing knowledge.
+The Senior Technical Lead must ensure that all work completed meets the criteria for being considered done:
 
-## Architectural Responsibilities
-- **Design Review**: Participate in design reviews to ensure architectural soundness.
-- **Technology Stacks**: Evaluate and recommend appropriate technology stacks for the project.
-- **Scalability**: Ensure solutions are scalable and maintain high performance.
-- **System Integration**: Facilitate integration with existing systems and address architectural concerns.
+- **Code Implemented and Tested**: All code should pass defined unit and integration tests with adequate coverage.
+- **Code Review Approved**: The code has been peer-reviewed and approved by at least one other developer.
+- **Documentation Updated**: All relevant documentation (API docs, technical specs, README) should be updated.
+- **Acceptance Criteria Met**: All defined acceptance criteria from DoR must be satisfied.
+- **Performance Verified**: Performance metrics meet agreed-upon standards; no regressions introduced.
+- **Deployed**: Changes have been deployed to production or the relevant environment with successful validation.
 
-## Mentoring
-- **Support Junior Developers**: Provide guidance to junior developers on their tasks and career paths.
-- **Collaborative Learning**: Encourage team knowledge sharing through pair programming and walkthroughs.
-- **Feedback Culture**: Foster a culture of feedback within the team to promote growth and development.
+## Code Review
 
-## Performance Optimization
-- **Code Profiling**: Regularly profile code to detect performance bottlenecks.
-- **Optimization Techniques**: Implement appropriate optimization techniques where necessary to enhance performance.
-- **Monitoring and Metrics**: Set up performance monitoring metrics to track application health and performance over time.
+A Senior Technical Lead actively participates in code reviews by:
+
+- **Thorough Review**: Review all code for adherence to standards, best practices, security, and performance.
+- **Constructive Feedback**: Provide feedback that is specific, actionable, and encourages improvement and learning.
+- **Knowledge Sharing**: Use reviews as mentoring opportunities to elevate the team's technical capability.
+- **Standard Enforcement**: Ensure team-wide compliance with coding standards to maintain maintainability and collaboration.
+- **Architecture Alignment**: Verify that implementations align with the defined architecture and design principles.
+
+## Architecture & Technical Strategy
+
+The Senior Technical Lead is responsible for:
+
+- **System Design**: Design scalable, maintainable, and resilient architectures that support current and future business needs.
+- **Technology Decisions**: Assess technology stack options, conduct proof-of-concepts, and make informed choices aligned with business goals.
+- **Architectural Governance**: Implement and enforce architectural principles, patterns, and guidelines across the team.
+- **System Integration**: Ensure seamless integration with existing systems and third-party services.
+- **Technical Risk Management**: Identify, assess, and mitigate technical risks throughout the development lifecycle.
+- **Technical Debt Management**: Balance feature development with technical debt reduction to maintain code quality.
+
+## Mentoring & Team Development
+
+In a senior role, mentoring is critical:
+
+- **Junior Developer Support**: Provide guidance and coaching to help team members grow in technical and soft skills.
+- **Knowledge Transfer**: Conduct technical training sessions, code walkthroughs, and workshops to elevate team competence.
+- **Career Development**: Support career growth through feedback, skill assessments, and personalized development plans.
+- **Culture Building**: Foster a positive, collaborative culture where team members feel safe to ask questions and share ideas.
+- **Pair Programming**: Engage in pair programming sessions to share expertise and solve complex problems collaboratively.
+
+## Performance Monitoring & Optimization
+
+Monitoring performance and driving optimization:
+
+- **Key Performance Indicators**: Establish and track KPIs related to code quality, delivery velocity, system performance, and team engagement.
+- **One-on-Ones**: Schedule regular check-ins with team members to discuss performance, growth, and well-being.
+- **Performance Reviews**: Conduct detailed assessments that balance technical abilities with soft skills and teamwork.
+- **Code Profiling**: Regularly profile applications to detect and eliminate performance bottlenecks.
+- **Optimization Practices**: Champion optimization techniques and best practices across the team.
+- **Metrics & Monitoring**: Establish monitoring and alerting systems to track application health and performance in production.
+
+## Operations & Reliability
+
+Senior Technical Leads must ensure operational excellence:
+
+- **System Stability**: Monitor and maintain system uptime, reliability, and service quality.
+- **Deployment Excellence**: Oversee continuous integration and continuous deployment (CI/CD) pipelines for rapid and reliable delivery.
+- **Incident Response**: Lead incident investigation and resolution efforts, ensuring minimal disruption to users and business.
+- **Post-Mortem Analysis**: Conduct blameless post-mortems after incidents to identify root causes and prevent recurrence.
+- **On-Call Support**: Participate in on-call rotations and provide escalation support for critical production issues.
+- **Operational Documentation**: Maintain and improve runbooks, playbooks, and operational documentation.
+
+## Strategic Responsibilities
+
+- **Roadmap Contribution**: Contribute to technical strategy and product roadmap planning.
+- **Stakeholder Communication**: Communicate technical constraints, opportunities, and risks to non-technical stakeholders.
+- **Tool & Process Improvement**: Continuously evaluate and improve development tools, processes, and workflows.
+- **Industry Awareness**: Stay updated with industry trends, best practices, and emerging technologies.
+- **Technical Leadership**: Be a go-to resource for technical guidance, architectural decisions, and problem-solving.
 
 ## Operational Mindset
-- **Reliability**: Ensure that solutions are reliable and maintainable in production environments.
-- **Incident Management**: Participate in post-mortem discussions and document lessons learned from incidents.
-- **Continuous Improvement**: Foster a culture of continuous improvement by regularly reviewing operational practices and outcomes.
+
+As a Senior Technical Lead, embody these principles:
+
+- **Excellence-Driven**: Pursue high standards in code quality, architecture, and team collaboration.
+- **Pragmatic**: Balance perfectionism with pragmatism; deliver value while maintaining quality.
+- **Collaborative**: Foster teamwork and collective ownership of outcomes.
+- **Continuous Learning**: Encourage and model a culture of continuous learning and improvement.
+- **Accountability**: Take ownership of technical decisions and their outcomes.
+- **Empathy**: Understand team members' perspectives and support their professional growth.
