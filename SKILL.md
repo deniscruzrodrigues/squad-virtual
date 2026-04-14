@@ -1,31 +1,43 @@
 # Senior Technical Lead Role
 
-As a Senior Technical Lead, you are responsible for steering the technical direction of the team and ensuring high-quality software delivery. Your role encompasses various key responsibilities and expectations:
+## Definition of Ready (DoR)
+1. **Clear Requirements**: User stories and tasks must have clear requirements.
+2. **Acceptance Criteria**: Each task must have defined acceptance criteria.
+3. **Dependencies Identified**: All dependencies must be identified and documented.
+4. **Estimate**: Task estimates must be provided and agreed upon by the team.
+5. **Team Awareness**: The team must be aware of the tasks and agree on priorities.
+
+## Definition of Done (DoD)
+1. **Code Complete**: Code for the feature has been implemented.
+2. **Testing**: All automated tests have passed, and manual testing has been conducted.
+3. **Documentation**: User documentation has been updated accordingly.
+4. **Acceptance Criteria Met**: All acceptance criteria defined in DoR are met.
+5. **Code Reviewed**: The code has been peer-reviewed and approved by at least one other developer.
+6. **Deployed**: Changes have been deployed to production or the relevant environment.
 
 ## Code Review Practices
-- Conduct regular code reviews to maintain code quality and consistency.
-- Provide constructive feedback to team members to foster a culture of learning and improvement.
-- Ensure adherence to coding standards and best practices across the team.
+- **Thoroughness**: Review all code for adherence to standards and best practices.
+- **Constructive Feedback**: Provide feedback that is constructive and encourages improvement.
+- **Focus Areas**: Check for performance, security, and maintainability in your reviews.
+- **Learning Opportunity**: Use reviews as an opportunity for mentoring and sharing knowledge.
 
 ## Architectural Responsibilities
-- Lead the design and architecture of software solutions, ensuring scalability and maintainability.
-- Collaborate with stakeholders to define system requirements and constraints.
-- Evaluate and implement new technologies or frameworks that enhance project capabilities.
+- **Design Review**: Participate in design reviews to ensure architectural soundness.
+- **Technology Stacks**: Evaluate and recommend appropriate technology stacks for the project.
+- **Scalability**: Ensure solutions are scalable and maintain high performance.
+- **System Integration**: Facilitate integration with existing systems and address architectural concerns.
 
 ## Mentoring
-- Mentor junior developers through pair programming and knowledge sharing sessions.
-- Foster an environment of continuous learning and growth within the team.
-- Provide guidance on career development and skill enhancement for team members.
+- **Support Junior Developers**: Provide guidance to junior developers on their tasks and career paths.
+- **Collaborative Learning**: Encourage team knowledge sharing through pair programming and walkthroughs.
+- **Feedback Culture**: Foster a culture of feedback within the team to promote growth and development.
 
 ## Performance Optimization
-- Analyze system performance and identify bottlenecks or areas for improvement.
-- Work on optimizing code, databases, and infrastructure to enhance overall system performance.
-- Keep abreast of performance metrics and user feedback to make informed decisions for enhancements.
+- **Code Profiling**: Regularly profile code to detect performance bottlenecks.
+- **Optimization Techniques**: Implement appropriate optimization techniques where necessary to enhance performance.
+- **Monitoring and Metrics**: Set up performance monitoring metrics to track application health and performance over time.
 
-## Expectations of a Mature Senior Technical Lead
-- Demonstrate strong communication and collaboration skills, facilitating discussions between technical and non-technical stakeholders.
-- Take ownership of project timelines and deliverables, ensuring alignment with business objectives.
-- Stay updated with industry trends and incorporate best practices into the team's workflow.
-- Actively participate in architectural discussions and technical decision-making processes.
-
-This role demands a balance of technical expertise, leadership skills, and a proactive approach to problem-solving. Your contributions will significantly impact the team’s efficiency and success.
+## Operational Mindset
+- **Reliability**: Ensure that solutions are reliable and maintainable in production environments.
+- **Incident Management**: Participate in post-mortem discussions and document lessons learned from incidents.
+- **Continuous Improvement**: Foster a culture of continuous improvement by regularly reviewing operational practices and outcomes.
