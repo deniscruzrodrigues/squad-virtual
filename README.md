@@ -60,10 +60,6 @@ npx skills add ./ --skill <nome-da-skill>
 
 4. **Dados**: Engenheiros de dados gerenciam SQL, NoSQL e análises.
 
-## Contribuições
-
-Este projeto nasceu de um fork e foi customizado para atender às necessidades específicas do squad virtual corporativo.
-
 ## Licença
 
 MIT
