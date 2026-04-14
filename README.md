@@ -1,29 +1,138 @@
-# Squad Virtual
+# Agent Skills by Glaucia Lemos
 
-Projeto Squad Virtual criado por Denis Cruz Rodrigues.
+<div align="center">
 
-## Descrição
+<img src="https://avatars.githubusercontent.com/u/1631477?v=4" width="96" style="border-radius:50%" alt="Glaucia Lemos"/>
 
-Este projeto foi desenvolvido para ... (adicione uma descrição detalhada do projeto aqui).
+<h3>Glaucia Lemos</h3>
+<p>A.I Developer · Open Source Contributor · <a href="https://linktr.ee/glaucia_lemos86">linktr.ee/glaucia_lemos86</a></p>
 
-## Como usar
+<p>
+  <a href="https://agentskills.io/"><img src="https://img.shields.io/badge/Agent%20Skills-Open%20Standard-111827?style=flat-square" alt="Agent Skills"/></a>
+  <a href="https://skills.sh/"><img src="https://img.shields.io/badge/Listed%20on-skills.sh-0f766e?style=flat-square" alt="skills.sh"/></a>
+  <a href="https://github.com/glaucia86"><img src="https://img.shields.io/github/followers/glaucia86?style=flat-square&label=Follow&color=1f2937" alt="GitHub followers"/></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-1f2937?style=flat-square" alt="License: MIT"/></a>
+</p>
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/deniscruzrodrigues/squad-virtual.git
-   ```
+</div>
 
-2. Navegue até o diretório do projeto:
-   ```bash
-   cd squad-virtual
-   ```
+---
 
-3. Siga as instruções específicas do projeto.
+A growing collection of reusable skills for coding agents. Focused on safe delivery
+workflows, Human in the Loop decisions, and explicit release gates.
 
-## Contribuição
+Each skill is a portable, executable playbook that any coding agent can follow.
+Most teams ship faster when they are strict about process. But process usually lives
+in scattered docs and tribal knowledge. These skills change that.
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e enviar pull requests.
+## Quick Start
 
-## Licença
+Install all skills from this repository:
 
-Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+```bash
+npx skills@latest add glaucia86/skills
+```
+
+Install a specific skill by name:
+
+```bash
+npx skills@latest add glaucia86/skills --skill <skill-name>
+```
+
+List all available skills from a local clone:
+
+```bash
+npx skills add ./ --list
+```
+
+## Skill Catalog
+
+Each skill has its own `README.md` with full installation instructions, workflow
+diagrams, and usage examples.
+
+| Skill | Category | What it does | HITL |
+|---|---|---|---|
+| [`task-clarification-harness`](task-clarification-harness/README.md) | Harness Engineering | Pre-implementation clarification guide that grounds the task in the repo, defines boundaries, and produces an implementation contract | Recommended when tasks are ambiguous or risky |
+| [`implementation-contract-review-harness`](implementation-contract-review-harness/README.md) | Harness Engineering | Feedback sensor that reviews a clarification artifact before coding and returns a contract verdict | Recommended before coding when the contract matters |
+| [`implementation-readiness-gate`](implementation-readiness-gate/README.md) | Harness Engineering | Final pre-implementation gate that returns `go`, `go-with-caveats`, or `no-go` from the current artifacts | Optional final decision layer |
+| [`review-to-release-workflow`](review-to-release-workflow/README.md) | Engineering Workflow | Four-phase workflow: discovery → implementation → verification → release readiness | Required at key decision points |
+| [`squad-task-delegator`](squad-task-delegator/README.md) | Squad Management | Gerencia a delegação de tarefas dentro de um squad virtual corporativo. | Recomendado para coordenar múltiplos agentes |
+| [`squad-tech-lead`](squad-tech-lead/README.md) | Squad Engineering | Líder técnico focado em DoR, DoD e migração de IBM ODM para Java. | Obrigatório para validação técnica |
+| [`squad-developer-fullstack`](squad-developer-fullstack/README.md) | Squad Engineering | Desenvolvedor especialista em Java e Angular para implementação de motor de regras. | Responsável pela execução técnica |
+| [`squad-data-engineer`](squad-data-engineer/README.md) | Squad Engineering | Engenheiro de dados para SQL/NoSQL e democratização de dados. | Essencial para suporte e insights de dados |
+
+## Recommended Harness Composition
+
+The three harness skills can be used independently.
+They do not have to run in a rigid sequence every time.
+
+When you want stronger pre-implementation control, the recommended composition is:
+
+1. [`task-clarification-harness`](task-clarification-harness/README.md)
+2. [`implementation-contract-review-harness`](implementation-contract-review-harness/README.md)
+3. [`implementation-readiness-gate`](implementation-readiness-gate/README.md)
+
+Role of each:
+
+- `task-clarification-harness`: creates the artifact
+- `implementation-contract-review-harness`: reviews the artifact
+- `implementation-readiness-gate`: consolidates the final execution decision
+
+## Add a New Skill
+
+Use this repo as a scalable catalog. For every new skill:
+
+1. Create a folder at repo root using kebab-case.
+2. Add `SKILL.md` with valid frontmatter (`name`, `description`).
+3. Add `README.md` inside the folder with full documentation.
+4. Add `evals/evals.json` with at least 2 realistic prompts.
+5. Add one row to the Skill Catalog table above.
+
+Starter layout:
+
+```text
+my-new-skill/
+  SKILL.md
+  README.md
+  evals/
+    evals.json
+  references/
+  scripts/
+```
+
+## Quality Bar for New Skills
+
+- Clear trigger description (when to use, when not to use)
+- Explicit scope boundaries and stop conditions
+- Deterministic outputs or documented decision points
+- At least 2 realistic eval prompts before publish
+- Install test passes locally:
+
+```bash
+npx skills add ./ --list
+```
+
+## Publishing Checklist
+
+Before pushing a new skill:
+
+1. Skill folder is at repo root and not ignored by Git.
+2. `SKILL.md` has valid `name` and `description` frontmatter.
+3. `README.md` inside the skill folder covers usage and examples.
+4. Skill Catalog table links to the skill README.
+5. Install command works locally and from the remote repo.
+
+## Roadmap
+
+- More workflow skills: architecture reviews, incident response, migration playbooks.
+- Stronger eval coverage with negative tests and artifact-gating checks.
+- Benchmark automation for iteration reports.
+
+---
+
+<div align="center">
+
+Made by [Glaucia Lemos](https://github.com/glaucia86) · Rio de Janeiro, Brazil
+· [Twitter/X](https://twitter.com/glaucia_lemos86) · [LinkedIn](https://www.linkedin.com/in/glaucialemos/) · [YouTube](https://bit.ly/youtube-canal-glaucialemos) · [Linktree](https://linktr.ee/glaucia_lemos86)
+
+</div>

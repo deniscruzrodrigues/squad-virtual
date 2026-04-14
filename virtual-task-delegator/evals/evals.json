@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Delegação Simples",
+    "prompt": "Delegue a tarefa de escrever um relatório de performance para o agente de análise de dados."
+  },
+  {
+    "name": "Delegação Complexa",
+    "prompt": "Precisamos lançar um novo produto. Delegue as tarefas de marketing, backend e frontend para o squad virtual."
+  }
+]
